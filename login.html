@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login | Disaster Management And Rescue System (DMRS)</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="auth-page">
+<div class="auth-shell">
+<section class="auth-promo"><a class="brand" href="index.html"><span class="brand-mark">D</span><span>DMRS</span></a><div class="auth-copy"><div class="eyebrow">SECURE OPERATIONS</div><h1>Command the response.</h1><p>Access the disaster response control plane and coordinate operations in real time.</p><div class="trust-list"><span>✓ Role-based access</span><span>✓ Audit-ready actions</span><span>✓ Spring Security compatible</span></div></div></section>
+<section class="auth-card"><div class="mobile-brand"><a class="brand" href="index.html"><span class="brand-mark">D</span><span>DMRS</span></a></div><h2>Welcome back</h2><p class="muted">Sign in to your operations workspace.</p>
+<form id="loginForm">
+<label>Email<input id="email" type="email" value="admin@resq.local" required></label>
+<label>Password<div class="password-wrap"><input id="password" type="password" value="admin123" required><button type="button" class="icon-btn" data-toggle-password>◉</button></div></label>
+<label>Role<select id="role"><option>ADMIN</option><option>AUTHORITY</option><option>RESCUE</option><option>MEDICAL</option><option>CITIZEN</option></select></label>
+<div class="form-row"><label class="check"><input type="checkbox" checked> Remember me</label><a href="#">Forgot password?</a></div>
+<button class="btn btn-primary btn-block" type="submit">Sign in to command center</button><div id="loginMessage" class="form-message"></div>
+</form><p class="auth-foot">Demo credentials: <b>admin@resq.local</b> / <b>admin123</b></p></section>
+</div>
+<script src="js/app.js"></script><script src="js/auth.js"></script>
+</body></html>

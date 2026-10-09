@@ -1,0 +1,4 @@
+document.addEventListener("DOMContentLoaded",()=>{
+document.querySelector("[data-toggle-password]")?.addEventListener("click",e=>{let i=document.getElementById("password");i.type=i.type==="password"?"text":"password"});
+document.getElementById("loginForm")?.addEventListener("submit",e=>{e.preventDefault();let email=document.getElementById("email").value.trim(),role=document.getElementById("role").value;if(!email)return;let names={ADMIN:"System Administrator",AUTHORITY:"Disaster Authority",RESCUE:"Rescue Operations",MEDICAL:"Medical Operations",CITIZEN:"Citizen User"};localStorage.setItem("resq_user",JSON.stringify({name:names[role],email,role}));localStorage.setItem("resq_token","demo-jwt-token");let m=document.getElementById("loginMessage");m.style.color="var(--success)";m.textContent="Authentication successful. Opening command center…";setTimeout(()=>location.href="dashboard.html",300)})
+});

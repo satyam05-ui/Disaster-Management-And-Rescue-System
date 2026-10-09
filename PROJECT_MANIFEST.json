@@ -1,0 +1,29 @@
+{
+  "project": "Disaster Management And Rescue System",
+  "acronym": "DMRS",
+  "description": "Student-built disaster-management frontend prototype for a Java PBL; demo data is illustrative.",
+  "entry": "index.html",
+  "demo_login": "admin@resq.local / admin123",
+  "modules": [
+    "disasters",
+    "emergencies",
+    "rescue-teams",
+    "hospitals",
+    "shelters",
+    "resources",
+    "volunteers",
+    "alerts",
+    "dashboard",
+    "map",
+    "analytics",
+    "users",
+    "audit",
+    "settings"
+  ],
+  "backend_ready": "API adapter included; live integration must be tested with the matching backend.",
+  "notes": [
+    "Sample incident counts and locations are illustrative, not live emergency information.",
+    "Demo authentication is client-side and must not be used as production security.",
+    "Team should personalize requirements, test evidence, and design decisions before submission."
+  ]
+}
